@@ -45,28 +45,32 @@ function getRenderArray() {
     return renderArray;
 }
 function checkAnswer() {
+    if(currentQuestion === 24) {
+        nextQuestionBtn.disabled = true;
+    }
     inputs.forEach(el => {
-        if(el.checked && el.id === db[currentQuestion].correct) {
+        if(el.checked && el.id === renderArray[currentQuestion].correct) {
             nextQuestionBtn.disabled = false;
-        } else if(el.checked && el.id !== db[currentQuestion].correct) {
+        } else if(el.checked && el.id !== renderArray[currentQuestion].correct) {
             nextQuestionBtn.disabled = true;
         }
     })
+
 }
 function clearCheckedInput() {
     inputs.forEach(el => el.checked = false)
 }
 function setNextQuestion() {
     currentQuestion = currentQuestion + 1;
-    if(db[currentQuestion] != false) {
-        img.src = `${db[currentQuestion].imgUrl}`;
+    if(renderArray[currentQuestion] != false) {
+        img.src = `${renderArray[currentQuestion].imgUrl}`;
 
     } else {
         img.src = ` `;
     }
-    question.textContent = `${db[currentQuestion].question}`;
+    question.textContent = `${renderArray[currentQuestion].question}`;
     answerOptions.forEach((el,index)=> {
-        el.textContent = `${db[currentQuestion].answers[index].text}`;
+        el.textContent = `${renderArray[currentQuestion].answers[index].text}`;
     });
     nextQuestionBtn.disabled = true;
     clearCheckedInput();
