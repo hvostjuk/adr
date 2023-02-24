@@ -4,15 +4,18 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8V2GED0S7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
         gtag('config', 'G-R8V2GED0S7');
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADR(БАЗОВЫЙ КУРС)</title>
+    <title>ЭКЗАМЕН ADR (Базовый курс)</title>
     <link rel="stylesheet" href="pages-styles.css">
 </head>
 <body>
@@ -37,14 +40,11 @@
             </div>
         </div>
         <div class="content__btns">
-            <button class="answer__btn btn">Проверить ответ!</button>
             <button class="next_question btn">Следующий вопрос</button>
         </div>
-
     </div>
 </div>
-<span class="check"></span>
-    <script src="../DB.js"></script>
-    <script src="all-base.js"></script>
+<script src="../DB.js"></script>
+<script src="exam.js"></script>
 </body>
 </html>
