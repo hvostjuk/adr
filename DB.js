@@ -184,7 +184,7 @@ db = [
             }
         ],
         imgUrl : '',
-        correct: 'b',
+        correct: 'a',
     },
     {
         id: 12,
@@ -711,7 +711,7 @@ db = [
             }
         ],
         imgUrl : '../assets/img/Screenshot_42.png',
-        correct: 'b',
+        correct: 'a',
     },
     {
         id: 43,
@@ -1119,7 +1119,7 @@ db = [
             }
         ],
         imgUrl : '../assets/img/Screenshot_66.png',
-        correct: 'c',
+        correct: 'b',
     },
     {
         id: 67,
@@ -1340,7 +1340,7 @@ db = [
             }
         ],
         imgUrl : '../assets/img/Screenshot_79.png',
-        correct: 'c',
+        correct: 'a',
     },
     {
         id: 80,
@@ -2795,7 +2795,7 @@ db = [
             }
         ],
         imgUrl : '',
-        correct: 'a',
+        correct: 'b',
     },
     {
         id: 165,
@@ -4393,7 +4393,7 @@ db = [
             }
         ],
         imgUrl : '',
-        correct: 'a',
+        correct: 'c',
     },
     {
         id: 259,
@@ -4740,7 +4740,7 @@ db = [
         question: 'В соответствие с ДОПОГ класс 3 – это:',
         answers: [
             {
-                text: 'легковоспламеняющиеся жидкости'
+                text: 'Легковоспламеняющиеся жидкости'
             },
             {
                 text: 'Твердые десенсибилизирующие взрывчатые вещества'
@@ -4750,7 +4750,7 @@ db = [
             }
         ],
         imgUrl : '',
-        correct: 'c',
+        correct: 'a',
     },
     {
         id: 280,
@@ -5627,7 +5627,7 @@ db = [
                 text: 'В письменных инструкциях'
             },
             {
-                text: 'В свидетельстве с ДОПОГ о подготовке водителя'
+                text: 'В свидетельстве ДОПОГ о подготовке водителя'
             },
             {
                 text: 'В транспортном документе на опасный груз'
@@ -6399,7 +6399,7 @@ db = [
             }
         ],
         imgUrl : '',
-        correct: 'a',
+        correct: 'b',
     },
     {
         id: 377,
