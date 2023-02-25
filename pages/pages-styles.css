@@ -8,6 +8,24 @@ body {
     padding: 10px 10px 0 10px;
     font-size: 18px;
 }
+
+.questions__list {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.questions__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
 .wrapper {
     padding: 20px 20px 20px 20px;
     border: 2px solid #dfdfdf;
