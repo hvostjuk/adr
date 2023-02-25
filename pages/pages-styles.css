@@ -11,8 +11,9 @@ body {
 
 .questions__list {
     margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-row-gap: 5px;
     list-style-type: none;
 }
 
