@@ -4647,7 +4647,7 @@ db = [
                 text: 'Сочетанием знаков а) и б)'
             }
         ],
-        imgUrl : '',
+        imgUrl : '../assets/img/Screenshot_273.png',
         correct: 'b',
     },
     {
