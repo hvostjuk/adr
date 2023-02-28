@@ -1,49 +1,77 @@
 *,
 *::before,
 *::after {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 .adr {
-    padding: 10px 10px;
-}
+  padding: 10px 0px;
 
-.adr__wrapper {
-    max-width: 1920px;
+  &__wrapper {
+    max-width: 1320px;
     margin: 0 auto;
-}
 
-.adr__logo-wrap {
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      max-width: 1140px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      max-width: 960px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+      max-width: 540px;
+    }
+
+    @media (max-width: 575px) {
+      padding: 0 .75rem;
+    }
+  }
+
+  &__logo-wrap {
     display: flex;
     justify-content: center;
-}
+  }
 
-.adr__logo {
+  &__logo-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
     max-width: 400px;
-}
+    @media (max-width: 575px) {
+      max-width: 200px;
+    }
 
-.adr__content {
+  }
+
+  &__content {
     margin-top: 100px;
-}
+  }
 
-.adr__list {
+  &__list {
     display: flex;
     flex-direction: column;
     list-style: none;
-}
+  }
 
-.adr__item {
+  &__item {
     height: 60px;
     background: rgba(45, 45, 213, 0.75);
-}
+  }
 
-.adr__item + .adr__item {
+  &__item + &__item {
     margin-top: 25px;
-}
+  }
 
-.adr__link {
+  &__link {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -52,8 +80,14 @@
     color: white;
     font-weight: bold;
     text-decoration: none;
-}
 
-.adr__link:hover {
-    background: rgba(45, 45, 213, 0.55);
+    @media (max-width: 400px) {
+      font-size: 15px;
+    }
+
+  }
+
+  &__link:hover {
+    background: rgba(75, 75, 203, 0.75);
+  }
 }
