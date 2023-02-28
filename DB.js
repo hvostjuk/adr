@@ -829,7 +829,7 @@ db = [
                 text: 'Запрещается'
             }
         ],
-        imgUrl : '',
+        imgUrl : '../assets/img/Screenshot_49.png',
         correct: 'b',
     },
     {
