@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__img-wrap {
+    height: 60px;
+    width: 60px;
+}
+
+.header__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.header__intro {
+    margin-left: 15px;
+}
+
+.header__title {
+    font-size: 20px;
+}
+
+.header__subtitle {
+    font-size: 14px;
+}
+
+.adr__inner {
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 70px auto 70px;
+    grid-template-rows: 70px auto 70px;
+}
+
+.adr__list {
+    margin-top: 30px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.adr__item {
+    height: 250px;
+    opacity: 0.4;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.adr__item:hover {
+    opacity: 1;
+}
+
+.adr__item:nth-child(1) {
+    background-image: url(../images/base.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.adr__item:nth-child(2) {
+    background-image: url(../images/tanks.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.adr__link {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.adr__intro {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.adr__footer {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .adr__item {
+        height: 160px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .header__subtitle {
+        display: none;
+    }
+
+    .adr__list {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .adr__item {
+        height: 160px;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .container {
+        padding: 0px 15px;
+    }
+
+    .header__subtitle {
+        display: none;
+    }
+
+    .adr__inner {
+        -ms-grid-rows: 85px auto 70px;
+        grid-template-rows: 85px auto 70px;
+    }
+
+    .adr__list {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .adr__item {
+        height: 125px;
+        opacity: 1;
+    }
+
+    .adr__link {
+        font-size: 35px;
+    }
+}
